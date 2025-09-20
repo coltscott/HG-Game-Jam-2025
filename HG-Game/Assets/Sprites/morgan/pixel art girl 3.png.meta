@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 4e236c585932fa44daa9b4cc2363493b
+guid: b0c889b7c6965874ebefdae76670e4a5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5221364414996793850
-    second: pixel art girl 2_0
+      213: -7515923726374194366
+    second: pixel art girl 3_0
   - first:
-      213: 2495225518251392649
-    second: pixel art girl 2_1
+      213: 554594466296356273
+    second: pixel art girl 3_1
   - first:
-      213: 6567275511237925267
-    second: pixel art girl 2_2
+      213: 909198386048678979
+    second: pixel art girl 3_2
   - first:
-      213: -8244695739598960013
-    second: pixel art girl 2_3
+      213: -1030675937521875159
+    second: pixel art girl 3_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,7 +109,51 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixel art girl 2_2
+      name: pixel art girl 3_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2433982213312b790800000000000000
+      internalID: -7515923726374194366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel art girl 3_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bdddfd8ab052b700800000000000000
+      internalID: 554594466296356273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel art girl 3_2
       rect:
         serializedVersion: 2
         x: 47
@@ -124,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39955755846a32b50800000000000000
-      internalID: 6567275511237925267
+      spriteID: 34c3ace6d1f1e9c00800000000000000
+      internalID: 909198386048678979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel art girl 2_3
+      name: pixel art girl 3_3
       rect:
         serializedVersion: 2
         x: 75
@@ -146,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37a070838e4f49d80800000000000000
-      internalID: -8244695739598960013
+      spriteID: 927477112bd42b1f0800000000000000
+      internalID: -1030675937521875159
       vertices: []
       indices: 
       edges: []
@@ -156,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c4b49b5fc5f1db64da91fe8491f5d9e4
+    spriteID: edbc97de50538b94d938560f7d1b82eb
     internalID: 0
     vertices: []
     indices: 
@@ -166,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pixel art girl 2_0: -5221364414996793850
-      pixel art girl 2_1: 2495225518251392649
-      pixel art girl 2_2: 6567275511237925267
-      pixel art girl 2_3: -8244695739598960013
+      pixel art girl 3_0: -7515923726374194366
+      pixel art girl 3_1: 554594466296356273
+      pixel art girl 3_2: 909198386048678979
+      pixel art girl 3_3: -1030675937521875159
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
