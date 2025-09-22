@@ -1,0 +1,587 @@
+fileFormatVersion: 2
+guid: 812e95bc855b70844937762a56645865
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -885497719656348021
+    second: pixel_art_dirt_ground_0
+  - first:
+      213: 8368227784081608905
+    second: pixel_art_dirt_ground_1
+  - first:
+      213: 4349698451216950806
+    second: pixel_art_dirt_ground_2
+  - first:
+      213: -7174591802301460692
+    second: pixel_art_dirt_ground_3
+  - first:
+      213: 3576942990783675635
+    second: pixel_art_dirt_ground_4
+  - first:
+      213: -4495225275990598593
+    second: pixel_art_dirt_ground_5
+  - first:
+      213: -7033192865515502326
+    second: pixel_art_dirt_ground_6
+  - first:
+      213: 6121742706314960864
+    second: pixel_art_dirt_ground_7
+  - first:
+      213: 6060438307414680695
+    second: pixel_art_dirt_ground_8
+  - first:
+      213: 4669768942472660118
+    second: pixel_art_dirt_ground_9
+  - first:
+      213: 5613186923519554224
+    second: pixel_art_dirt_ground_10
+  - first:
+      213: 7984436569776467675
+    second: pixel_art_dirt_ground_11
+  - first:
+      213: -2938637540222367936
+    second: pixel_art_dirt_ground_12
+  - first:
+      213: -6425676768112602815
+    second: pixel_art_dirt_ground_13
+  - first:
+      213: 5891010209049509058
+    second: pixel_art_dirt_ground_14
+  - first:
+      213: 770582284253805522
+    second: pixel_art_dirt_ground_15
+  - first:
+      213: 452543873733164277
+    second: pixel_art_dirt_ground_16
+  - first:
+      213: -7343845519126936103
+    second: pixel_art_dirt_ground_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 36
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86077af38416b3f0800000000000000
+      internalID: -885497719656348021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 36
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c01db535dae12470800000000000000
+      internalID: 8368227784081608905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 36
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6166ad812bb3d5c30800000000000000
+      internalID: 4349698451216950806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 35
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f4467b4cabe6c90800000000000000
+      internalID: -7174591802301460692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 18
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fcfb7bd2bad3a130800000000000000
+      internalID: 3576942990783675635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 35
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c193f9d60cd91c0800000000000000
+      internalID: -4495225275990598593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_6
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 35
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05032e2a54156e90800000000000000
+      internalID: -7033192865515502326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 19
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efdd389e8cc4f450800000000000000
+      internalID: 6121742706314960864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7742f90f7800b1450800000000000000
+      internalID: 6060438307414680695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 19
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6940c379c1a5ec040800000000000000
+      internalID: 4669768942472660118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 18
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2304a54cb06ed40800000000000000
+      internalID: 5613186923519554224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde2a21c1ca6ece60800000000000000
+      internalID: 7984436569776467675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0470b6b0abcd737d0800000000000000
+      internalID: -2938637540222367936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 5
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1411b2b260963d6a0800000000000000
+      internalID: -6425676768112602815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_14
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 2
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc789eb29211c150800000000000000
+      internalID: 5891010209049509058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db382b3188a1ba00800000000000000
+      internalID: 770582284253805522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fcf4276142c74600800000000000000
+      internalID: 452543873733164277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_dirt_ground_17
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d54813e86b651a90800000000000000
+      internalID: -7343845519126936103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cb3ea25df58310145a354d87e3bfc85d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      pixel_art_dirt_ground_0: -885497719656348021
+      pixel_art_dirt_ground_1: 8368227784081608905
+      pixel_art_dirt_ground_10: 5613186923519554224
+      pixel_art_dirt_ground_11: 7984436569776467675
+      pixel_art_dirt_ground_12: -2938637540222367936
+      pixel_art_dirt_ground_13: -6425676768112602815
+      pixel_art_dirt_ground_14: 5891010209049509058
+      pixel_art_dirt_ground_15: 770582284253805522
+      pixel_art_dirt_ground_16: 452543873733164277
+      pixel_art_dirt_ground_17: -7343845519126936103
+      pixel_art_dirt_ground_2: 4349698451216950806
+      pixel_art_dirt_ground_3: -7174591802301460692
+      pixel_art_dirt_ground_4: 3576942990783675635
+      pixel_art_dirt_ground_5: -4495225275990598593
+      pixel_art_dirt_ground_6: -7033192865515502326
+      pixel_art_dirt_ground_7: 6121742706314960864
+      pixel_art_dirt_ground_8: 6060438307414680695
+      pixel_art_dirt_ground_9: 4669768942472660118
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
