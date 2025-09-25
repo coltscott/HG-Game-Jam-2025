@@ -23,9 +23,9 @@ public class playerMovement : MonoBehaviour
   private float defaultGravity = -9.81f;
   private float scaleGravity = 4;
   private bool dashAvailable = true;
-  private float dashTime = 0.3f;
+  private float dashTime = 0.15f;
   private bool isDashing = false;
-  private float dashPower = 6f;
+  private float dashPower = 12f;
   private float dashEnd = 0f;
   private float dashDirection = 0;
   private bool doubleJumpReset = true;
