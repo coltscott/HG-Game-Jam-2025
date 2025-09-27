@@ -5,10 +5,26 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
+public enum PlayerState
+{
+  Stable = 1,
+  Dashing = 2,
+  Jumping = 3
+}
+
+public enum LayerNumber : int
+{
+  Ground = 8,
+  Wall = 9
+}
+
 public class playerMovement : MonoBehaviour
 {
+  // Player state
+  PlayerState playerState = PlayerState.Stable;
+
   // Input actions
-  private InputActionAsset InputActions;
+  // private InputActionAsset InputActions;
   private InputAction m_moveAction;
   private InputAction m_jumpAction;
   private InputAction m_dashAction;
@@ -37,12 +53,15 @@ public class playerMovement : MonoBehaviour
   [SerializeField] private int jumpsAvailiable = 2;
 
   private int maxJumps = 2;
-  private float jumpingPower = 16f;
+  private float jumpingPower = 12f;
+  private float jumpTime = 0.15f;
+  private float jumpEnd;
+  private float jumpDirection = 0;
+  private bool triedFlipped = false;
 
   // Dash
   private bool dashAvailable = true;
   private float dashTime = 0.15f;
-  private bool isDashing = false;
   private float dashPower = 12f;
   private float dashEnd = 0f;
   private float dashDirection = 0;
@@ -52,7 +71,7 @@ public class playerMovement : MonoBehaviour
   private float wallStickDuration = 2f;
   [SerializeField] private bool isOnWall = false;
   [SerializeField] private bool wallSticky = false;
-  private float scaleStickyGravity = 2f;
+  private float scaleStickyGravity = 0.5f;
   private float wallDirection = 0;
 
   private void Awake()
@@ -66,14 +85,13 @@ public class playerMovement : MonoBehaviour
   private void Update()
   {
     moveInput = m_moveAction.ReadValue<Vector2>();
-    // Debug.Log(moveInput);
 
-    if (m_jumpAction.WasPressedThisFrame() && (isGrounded() || jumpsAvailiable > 0))
+    if (m_jumpAction.WasPressedThisFrame() && (isGrounded() || jumpsAvailiable > 0) && (playerState == PlayerState.Stable))
     {
       Jump();
     }
 
-    if (m_dashAction.WasPressedThisFrame() && dashAvailable && moveInput.x != 0f)
+    if (m_dashAction.WasPressedThisFrame() && dashAvailable && (moveInput.x != 0f) && (playerState == PlayerState.Stable))
     {
       Dash();
     }
@@ -81,24 +99,21 @@ public class playerMovement : MonoBehaviour
 
   private void Jump()
   {
+    Debug.Log("start jump");
     jumpsAvailiable -= 1;
-    if (isOnWall && (wallDirection != moveInput.x))
-    {
-      body.linearVelocity = new Vector2(body.linearVelocity.x, 0);
-    }
-    else
-    {
-      body.linearVelocity = new Vector2(body.linearVelocity.x, 0);
-    }
-    
-    body.AddForceAtPosition(new Vector2(0, jumpingPower), Vector2.up, ForceMode2D.Impulse);
+    playerState = PlayerState.Jumping;
+    jumpEnd = Time.time + jumpTime;
+    jumpDirection = moveInput.x;
+    triedFlipped = false;
+
+
+    // Move to FixedUpdate()
   }
 
   private void Dash()
   {
-    Debug.Log("dash start");
     dashAvailable = false;
-    isDashing = true;
+    playerState = PlayerState.Dashing;
     dashDirection = moveInput.x;
     dashEnd = Time.time + dashTime;
   }
@@ -107,10 +122,11 @@ public class playerMovement : MonoBehaviour
   {
     switch (collision.gameObject.layer)
     {
-      case 8:
+      case (int) LayerNumber.Ground:
         jumpsAvailiable = 2;
         break;
-      case 9:
+      case (int) LayerNumber.Wall:
+        playerState = PlayerState.Stable;
         wallDirection = wallCollisionDirection();
         isOnWall = true;
         wallStickEnd = Time.time + wallStickDuration;
@@ -127,110 +143,119 @@ public class playerMovement : MonoBehaviour
   {
     switch (collision.gameObject.layer)
     {
-      case 8:
+      case (int) LayerNumber.Ground:
         dashAvailable = true;
-        // Debug.Log("ground layer");
         break;
-      case 9:
-        if (wallStickEnd < Time.time)
+      case (int) LayerNumber.Wall:
+        if (wallSticky && wallStickEnd < Time.time)
         {
           wallSticky = false;
         }
-        // Debug.Log("walled");
 
         break;
       default:
         break;
     }
-    // Debug.Log("Collision stay with" + collision.gameObject.name);
   }
 
   private void OnCollisionExit2D(Collision2D collision)
   {
     switch (collision.gameObject.layer)
     {
-      case 8:
+      case (int) LayerNumber.Ground:
         if (jumpsAvailiable == maxJumps && isGrounded())
         {
           jumpsAvailiable -= 1;
         }
 
         break;
-      case 9:
+      case (int) LayerNumber.Wall:
         isOnWall = false;
         goto case 8;
-        // break;
+      // break;
       default:
         break;
     }
-    // Debug.Log("Collision exit with" + collision.gameObject.name);
   }
 
   private void FixedUpdate()
   {
-    if (isDashing)
+    switch (playerState)
     {
-      if (Time.time >= dashEnd)
-      {
-        isDashing = false;
-      }
-      // else
-      // {
-
-      // }
-    }
-
-    if (isDashing)
-    {
-      body.linearVelocity = new Vector2(dashDirection * dashPower, 0);
-    }
-    else
-    {
-      if (wallSticky && isOnWall)
-      {
-        body.linearVelocity = new Vector2(moveInput.x * speed, 0);
-        body.linearVelocity += new Vector2(0, 0);
-      }
-      else if (isOnWall && !wallSticky)
-      {
-        body.linearVelocity = new Vector2(0, body.linearVelocity.y);
+      case PlayerState.Stable:
         if (moveInput.x != wallDirection)
         {
-          body.linearVelocity += new Vector2(moveInput.x * speed,  defaultGravity * scaleGravity * Time.fixedDeltaTime);
+          wallSticky = false;
+        }
+        if (wallSticky && isOnWall)
+        {
+          body.linearVelocity = new Vector2(moveInput.x * speed, 0);
+        }
+        else if (!wallSticky && isOnWall)
+        {
+          body.linearVelocity = new Vector2(0, body.linearVelocity.y);
+          if (moveInput.x != wallDirection)
+          {
+            body.linearVelocity += new Vector2(moveInput.x * speed, defaultGravity * scaleGravity * Time.fixedDeltaTime);
+          }
+          else
+          {
+            body.linearVelocity += new Vector2(0, defaultGravity * scaleStickyGravity * Time.fixedDeltaTime);
+          }
         }
         else
         {
-          body.linearVelocity += new Vector2(0,  defaultGravity * scaleStickyGravity * Time.fixedDeltaTime);
+          body.linearVelocity = new Vector2(moveInput.x * speed, body.linearVelocity.y);
+          body.linearVelocity += new Vector2(0, defaultGravity * scaleGravity * Time.fixedDeltaTime);
         }
-        
-      }
-      else
-      {
-        body.linearVelocity = new Vector2(moveInput.x * speed, body.linearVelocity.y);
-        body.linearVelocity += new Vector2(0, defaultGravity * scaleGravity * Time.fixedDeltaTime);
-      }
+        break;
+      case PlayerState.Dashing:
+        if (Time.time >= dashEnd)
+        {
+          playerState = PlayerState.Stable;
+          goto case PlayerState.Stable;
+        }
 
+        body.linearVelocity = new Vector2(dashDirection * dashPower, 0);
+        break;
+      case PlayerState.Jumping:
+        if (Time.time >= jumpEnd)
+        {
+          playerState = PlayerState.Stable;
+          jumpDirection = 0;
+          goto case PlayerState.Stable;
+        }
+        if (isOnWall && (wallDirection == moveInput.x) && !triedFlipped)
+        {
+          Debug.Log("flip");
+          jumpDirection = -jumpDirection;
+        }
+        triedFlipped = true;
+        body.linearVelocity = new Vector2(jumpDirection * speed, 0);
+
+        body.AddForceAtPosition(new Vector2(0, jumpingPower * (jumpEnd - Time.time + 0.5f)), Vector2.up, ForceMode2D.Impulse);
+
+        Debug.Log(body.linearVelocity);
+
+
+        break;
     }
-    // Debug.Log(body.linearVelocity);
 
   }
 
   private bool isGrounded()
   {
     return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-    // return false;
   }
 
   private float wallCollisionDirection()
   {
     if (Physics2D.OverlapCircle(leftCheck.position, groundCheckRadius, wallLayer))
     {
-      Debug.Log("left");
       return -1f;
     }
     if (Physics2D.OverlapCircle(rightCheck.position, groundCheckRadius, wallLayer))
     {
-      Debug.Log("right");
       return 1f;
     }
 
