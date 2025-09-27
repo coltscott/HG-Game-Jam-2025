@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 62145fccd76898b4181b18f5857fd5ad
+guid: d976a89e118760845bb72eac232711c3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8864633393940478353
-    second: square-16_0
+      213: -5062775622091356759
+    second: pixel art girl 1 real_0
+  - first:
+      213: -234585549034808115
+    second: pixel art girl 1 real_1
+  - first:
+      213: 111006087170485980
+    second: pixel art girl 1 real_2
+  - first:
+      213: -2337222646833072966
+    second: pixel art girl 1 real_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,30 +105,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: square-16_0
+      name: pixel art girl 1 real_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 17
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19933edda11850b70800000000000000
-      internalID: 8864633393940478353
+      spriteID: 9a5ccbb35686db9b0800000000000000
+      internalID: -5062775622091356759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel art girl 1 real_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 0
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc1750afa59ebcf0800000000000000
+      internalID: -234585549034808115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel art girl 1 real_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdee3b9b27f5a8100800000000000000
+      internalID: 111006087170485980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel art girl 1 real_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab43486c264809fd0800000000000000
+      internalID: -2337222646833072966
       vertices: []
       indices: 
       edges: []
@@ -148,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      square-16_0: 8864633393940478353
+      pixel art girl 1 real_0: -5062775622091356759
+      pixel art girl 1 real_1: -234585549034808115
+      pixel art girl 1 real_2: 111006087170485980
+      pixel art girl 1 real_3: -2337222646833072966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
