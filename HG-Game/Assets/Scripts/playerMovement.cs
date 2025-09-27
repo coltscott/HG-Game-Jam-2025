@@ -99,7 +99,6 @@ public class playerMovement : MonoBehaviour
 
   private void Jump()
   {
-    Debug.Log("start jump");
     jumpsAvailiable -= 1;
     playerState = PlayerState.Jumping;
     jumpEnd = Time.time + jumpTime;
@@ -163,7 +162,7 @@ public class playerMovement : MonoBehaviour
     switch (collision.gameObject.layer)
     {
       case (int) LayerNumber.Ground:
-        if (jumpsAvailiable == maxJumps && isGrounded())
+        if (jumpsAvailiable == maxJumps)
         {
           jumpsAvailiable -= 1;
         }
@@ -171,7 +170,7 @@ public class playerMovement : MonoBehaviour
         break;
       case (int) LayerNumber.Wall:
         isOnWall = false;
-        goto case 8;
+        goto case (int) LayerNumber.Ground;
       // break;
       default:
         break;
@@ -227,17 +226,12 @@ public class playerMovement : MonoBehaviour
         }
         if (isOnWall && (wallDirection == moveInput.x) && !triedFlipped)
         {
-          Debug.Log("flip");
           jumpDirection = -jumpDirection;
         }
         triedFlipped = true;
         body.linearVelocity = new Vector2(jumpDirection * speed, 0);
 
         body.AddForceAtPosition(new Vector2(0, jumpingPower * (jumpEnd - Time.time + 0.5f)), Vector2.up, ForceMode2D.Impulse);
-
-        Debug.Log(body.linearVelocity);
-
-
         break;
     }
 
