@@ -21,7 +21,7 @@ public enum LayerNumber : int
 public class playerMovement : MonoBehaviour
 {
   // Player state
-  PlayerState playerState = PlayerState.Stable;
+  [SerializeField] PlayerState playerState = PlayerState.Stable;
 
   // Input actions
   // private InputActionAsset InputActions;
@@ -39,7 +39,7 @@ public class playerMovement : MonoBehaviour
   [SerializeField] private LayerMask wallLayer;
 
   // Ground check parameters
-  private float groundCheckRadius = 0.04f;
+  private float groundCheckRadius = 0.5f;
 
   // Basic movement storage and parameters
   private Vector2 moveInput;
@@ -127,6 +127,7 @@ public class playerMovement : MonoBehaviour
       case (int) LayerNumber.Wall:
         playerState = PlayerState.Stable;
         wallDirection = wallCollisionDirection();
+        Debug.Log(wallDirection);
         isOnWall = true;
         wallStickEnd = Time.time + wallStickDuration;
         dashAvailable = true;
